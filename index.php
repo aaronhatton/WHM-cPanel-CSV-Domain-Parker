@@ -39,7 +39,7 @@
 		curl_setopt($curl, CURLOPT_URL, $domain_park); 
 		$domain_park_result = curl_exec($curl);
 		if ($domain_park_result == false) {
-			error_log("curl_exec threw error \"" . curl_error($curl) . "\" for $query<br /><br />"); 
+			error_log("curl_exec threw error \"" . curl_error($curl) . "\" for $domain_park_result<br /><br />"); 
 															// log error if curl exec fails
 		}
 		
@@ -47,7 +47,7 @@
 		curl_setopt($curl, CURLOPT_URL, $domain_mxset); 
 		$domain_mxset_result = curl_exec($curl);
 		if ($domain_mxset_result == false) {
-			error_log("curl_exec threw error \"" . curl_error($curl) . "\" for $query<br /><br />"); 
+			error_log("curl_exec threw error \"" . curl_error($curl) . "\" for $domain_mxset_result<br /><br />"); 
 															// log error if curl exec fails
 		}
 
